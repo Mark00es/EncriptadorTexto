@@ -192,3 +192,53 @@ footer a{
         margin: 0 0px;        
     }
 }
+@media screen and (min-width: 1100px) {   
+    .contenedor{
+        width: 1000px;
+        height: 650px;
+        padding: 5px;
+        margin-left: 10%; 
+    }
+    .izquierda{
+        width: 60%;
+        float: left;        
+        height: 60%;        
+    }    
+    #mensaje{
+        width: 100%;
+        float: left;        
+        height: 90%;   
+    }
+    .muestra{
+        width: 30%;
+        float: right;
+        height: 55%;
+    }
+    #imagen{
+        width: 50%;
+        height: 100%;        
+    }    
+    .info {        
+        margin-top: 0px;
+        font-size: 25px;
+    }
+    .info i {    
+        margin: 0 10px;        
+    }
+    .botones{
+        display: flex;        
+    }
+    .boton{
+        height: 50px;        
+        border-radius: 24px;    
+        font-size: 1rem;    
+        background-color: var(--bark-blue-300);
+        color: white;
+        margin: 0 10px;
+        border: none;
+        cursor:pointer;
+        max-width: 80vw;    
+        margin: 10px;  
+        width: 100%;           
+    }
+}
