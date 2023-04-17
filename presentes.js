@@ -14,25 +14,24 @@ function descifrarTexto(texto){
     salida = salida.replace("ufat","u");
     return salida;
 }
-function encriptar(){
-    var texto = document.getElementById("mensaje").value;
-    var txtcifrado = cifrarTexto(texto);
+function desplegarTexto(txtcifrado){
     document.getElementById("texto").style.display = "none";
     document.getElementById("imagen").style.display = "none";
     document.getElementById("texto-entrada").innerHTML = txtcifrado;    
     document.getElementById("copiar").style.display = "show";
     document.getElementById("copiar").style.display = "inherit";
+}
+function encriptar(){
+    var texto = document.getElementById("mensaje").value;
+    var txtcifrado = cifrarTexto(texto);
+    desplegarTexto(txtcifrado);
     return secreto;
 }
 
 function desencriptar(){
     var texto = document.getElementById("mensaje").value;
     var txtcifrado = descifrarTexto(texto);
-    document.getElementById("texto").style.display = "none";
-    document.getElementById("imagen").style.display = "none";
-    document.getElementById("texto-entrada").innerHTML = txtcifrado;    
-    document.getElementById("copiar").style.display = "show";
-    document.getElementById("copiar").style.display = "inherit";
+    desplegarTexto(txtcifrado);   
 }
 function copiar(){
     var contenido = document.querySelector("#texto-entrada");
