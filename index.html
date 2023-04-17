@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>    
+    <link rel="stylesheet" href="style.css">        
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-straight/css/uicons-bold-straight.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css'>
+    <script type="text/javascript" src="/presenter.js"></script>
+</head>
+<body>    
+    <header>
+        <div class="logo">
+            <img src="/imagenes/logo.jpeg" alt="" id="imagen-logo">                        
+        </div>       
+    </header>
+    <div class="contenedor">
+        <div class="izquierda">                       
+            <textarea name="texto" id="mensaje" cols="70" rows="10" class="input-padron" placeholder="Ingrese el texto aqui:" ></textarea>
+        </div> 
+        <div class="muestra">
+            <img id="imagen" src="/imagenes/imagen.png" alt="">                                                        
+            <h1 id="texto">Ningún mensaje fue encontrado</h1>
+            <textarea name="texto" id="texto-entrada" cols="70" rows="10" class="input-padron" >Ingresa el texto que desees encriptar o desencriptar</textarea>
+            <input id="copiar" type="submit" onclick="copiar()"  value="Copiar">
+        </div>                     
+        <div class="botones">
+            <h1 class="info"><i class="fi fi-bs-exclamation"></i>Solo letras minúsculas y sin acentos</h1>
+            <input type="submit" value="Encriptar" onclick="encriptar()"  class="boton">
+            <input type="submit" value="Desencriptar" onclick="desencriptar()" class="boton">
+        </div>    
+    </div>    
+    <footer>           
+        <a href="https://github.com/Mark00es" title="Ir a GitHub"><i class="fi fi-brands-github"></i>Mark00es - GitHub</a>        
+    </footer>
+</body>
+</html>
